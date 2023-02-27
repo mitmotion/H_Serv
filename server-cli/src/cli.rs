@@ -71,10 +71,10 @@ pub enum Message {
 
 #[derive(StructOpt)]
 #[structopt(
-    name = "Veloren server TUI",
+    name = "Hobania server TUI",
     version = common::util::DISPLAY_VERSION_LONG.as_str(),
-    about = "The veloren server tui allows sending commands directly to the running server.",
-    author = "The veloren devs <https://gitlab.com/veloren/veloren>",
+    about = "The Hobania server tui allows sending commands directly to the running server.",
+    author = "The hobania devs <https://github.com/mitmotion/hobania-update>",
 )]
 #[clap(no_binary_name = true)]
 pub struct TuiApp {
@@ -90,10 +90,10 @@ pub enum ArgvCommand {
 
 #[derive(StructOpt)]
 #[structopt(
-    name = "Veloren server CLI",
+    name = "hobania server CLI",
     version = common::util::DISPLAY_VERSION_LONG.as_str(),
-    about = "The veloren server cli provides an easy to use interface to start a veloren server.",
-    author = "The veloren devs <https://gitlab.com/veloren/veloren>",
+    about = "The hobania server cli provides an easy to use interface to start a hobania server.",
+    author = "The hobania devs <https://github.com/mitmotion/hobania-update>",
 )]
 pub struct ArgvApp {
     #[structopt(long, short)]

@@ -1,14 +1,14 @@
 [package]
-name = "veloren-server-cli"
+name = "hobania-server-cli"
 version = "0.14.0"
-authors = ["Joshua Barretto <joshua.s.barretto@gmail.com>"]
-edition = "2021"
+authors = ["Hobonatius Von Street <mrhobo1986@gmail.com>"]
+edition = "2023"
 
 [package.metadata.nix]
 build = true
 app = true
 longDescription = """
-Veloren is a multiplayer voxel RPG written in Rust.
+hobania is a multiplayer voxel RPG world open to all who wants to have fun.
 It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft.
 
 This package includes the official server CLI.
@@ -25,11 +25,11 @@ plugins = ["server/plugins"]
 hot-reloading = ["server/hot-reloading"]
 
 [dependencies]
-server = { package = "veloren-server", path = "../server", default-features = false, features = ["simd"] }
-common = { package = "veloren-common", path = "../common" }
-common-base = { package = "veloren-common-base", path = "../common/base" }
-common-net = { package = "veloren-common-net", path = "../common/net" }
-common-frontend = { package = "veloren-common-frontend", path = "../common/frontend" }
+server = { package = "hobania-server", path = "../server", default-features = false, features = ["simd"] }
+common = { package = "hobania-common", path = "../common" }
+common-base = { package = "hobania-common-base", path = "../common/base" }
+common-net = { package = "hobania-common-net", path = "../common/net" }
+common-frontend = { package = "hobania-common-frontend", path = "../common/frontend" }
 
 tokio = { version = "1.14", default-features = false, features = ["rt-multi-thread"] }
 num_cpus = "1.0"

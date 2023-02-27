@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   game-server:
-    image: registry.gitlab.com/veloren/veloren/server-cli:weekly
+    image: https://github.com/mitmotion/H_Serv.git
     stdin_open: true
     tty: true
     container_name: hobania-game-server-master

@@ -16,7 +16,7 @@ RUN apt-get update \
         net-tools \
     && rm -rf /var/lib/apt/lists/*;
 
-COPY ./veloren-server-cli /opt/veloren-server-cli
+COPY ./hobania-server-cli /opt/hobania-server-cli
 COPY ./assets/common /opt/assets/common
 COPY ./assets/server /opt/assets/server
 COPY ./assets/world /opt/assets/world
@@ -24,4 +24,4 @@ COPY ./assets/world /opt/assets/world
 WORKDIR /opt
 
 ENV RUST_BACKTRACE=full
-ENTRYPOINT ["/opt/veloren-server-cli"]
+ENTRYPOINT ["/opt/hobania-server-cli"]
